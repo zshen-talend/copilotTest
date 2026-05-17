@@ -1,0 +1,117 @@
+/* ===== Reset & Base ===== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #1a1a2e;
+  color: #eaeaea;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* ===== Layout ===== */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+h1 {
+  font-size: 2rem;
+  letter-spacing: 2px;
+  color: #4ecca3;
+}
+
+/* ===== Scoreboard ===== */
+.scoreboard {
+  display: flex;
+  gap: 32px;
+  font-size: 1.1rem;
+}
+
+.scoreboard strong {
+  color: #4ecca3;
+}
+
+/* ===== Canvas ===== */
+#gameCanvas {
+  border: 3px solid #4ecca3;
+  border-radius: 4px;
+  background-color: #16213e;
+  display: block;
+}
+
+/* ===== Game Over Overlay ===== */
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.75);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+
+.overlay.hidden {
+  display: none;
+}
+
+.overlay-content {
+  background: #16213e;
+  border: 2px solid #4ecca3;
+  border-radius: 8px;
+  padding: 40px 48px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.overlay-content h2 {
+  font-size: 2rem;
+  color: #e94560;
+}
+
+.overlay-content p {
+  font-size: 1.1rem;
+}
+
+/* ===== Restart Button ===== */
+#restartBtn {
+  margin-top: 8px;
+  padding: 12px 32px;
+  font-size: 1rem;
+  background-color: #4ecca3;
+  color: #1a1a2e;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.2s ease;
+}
+
+#restartBtn:hover {
+  background-color: #38b28a;
+}
+
+/* ===== Instructions ===== */
+.instructions {
+  font-size: 0.9rem;
+  color: #888;
+}
+
+kbd {
+  background: #16213e;
+  border: 1px solid #4ecca3;
+  border-radius: 3px;
+  padding: 2px 6px;
+  font-size: 0.85rem;
+  color: #4ecca3;
+}
