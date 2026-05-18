@@ -23,7 +23,8 @@
   const COLOR_BG    = '#16213e';
   const COLOR_SNAKE = '#4ecca3';
   const COLOR_HEAD  = '#38b28a';
-  const COLOR_FOOD  = '#4488ff';
+  // Food color: red
+  const COLOR_FOOD  = '#e94560';
   const COLOR_TEXT  = '#eaeaea';
 
   /* ===== DOM References ===== */
